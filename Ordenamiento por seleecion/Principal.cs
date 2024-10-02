@@ -44,5 +44,12 @@ namespace Ordenamiento_por_seleecion
 
             form4.Show();
         }
+
+        private void btnmanual_Click(object sender, EventArgs e)
+        {
+            Ingreso_manual_y_Ordenamiento form5 = new Ingreso_manual_y_Ordenamiento();
+
+            form5.Show();
+        }
     }
 }
