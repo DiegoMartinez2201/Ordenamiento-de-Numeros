@@ -1,6 +1,6 @@
 ﻿namespace Ordenamiento_por_seleecion
 {
-    partial class Ordenamiento_Impares
+    partial class Ordenamiento_de_Mayor_a_Menor
     {
         /// <summary>
         /// Required designer variable.
@@ -43,13 +43,12 @@
             groupBox1.Controls.Add(txtArray);
             groupBox1.Controls.Add(btnGenerar);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox1.Location = new Point(135, 71);
+            groupBox1.Location = new Point(131, 47);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(530, 308);
-            groupBox1.TabIndex = 2;
+            groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "Array";
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // txtArrayOrdenado
             // 
@@ -57,7 +56,6 @@
             txtArrayOrdenado.Name = "txtArrayOrdenado";
             txtArrayOrdenado.Size = new Size(305, 23);
             txtArrayOrdenado.TabIndex = 3;
-            txtArrayOrdenado.TextChanged += txtArrayOrdenado_TextChanged;
             // 
             // btnOrdenar
             // 
@@ -75,7 +73,6 @@
             txtArray.Name = "txtArray";
             txtArray.Size = new Size(305, 23);
             txtArray.TabIndex = 1;
-            txtArray.TextChanged += txtArray_TextChanged;
             // 
             // btnGenerar
             // 
@@ -87,14 +84,14 @@
             btnGenerar.UseVisualStyleBackColor = true;
             btnGenerar.Click += btnGenerar_Click;
             // 
-            // Ordenamiento_Impares
+            // Ordenamiento_de_Mayor_a_Menor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
-            Name = "Ordenamiento_Impares";
-            Text = "Ordenamiento_Impares";
+            Name = "Ordenamiento_de_Mayor_a_Menor";
+            Text = "Ordenamiento_de_Mayor_a_Menor";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

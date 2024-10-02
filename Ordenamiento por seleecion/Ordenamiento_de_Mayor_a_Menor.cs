@@ -10,11 +10,9 @@ using System.Windows.Forms;
 
 namespace Ordenamiento_por_seleecion
 {
-    public partial class Ordenamiento_Impares : Form
+    public partial class Ordenamiento_de_Mayor_a_Menor : Form
     {
-        int[] numerosAleatorios = new int[10];
-
-        public Ordenamiento_Impares()
+        public Ordenamiento_de_Mayor_a_Menor()
         {
             InitializeComponent();
         }
@@ -36,35 +34,32 @@ namespace Ordenamiento_por_seleecion
         {
             string textoA = txtArray.Text;
 
+            // Dividir la cadena en un array de números
             string[] numeros = textoA.Split(' ');
 
-            StringBuilder impares = new StringBuilder();
+            // Convertir a enteros, filtrar y ordenar de mayor a menor
+            List<int> listaNumeros = new List<int>();
 
             foreach (string numStr in numeros)
             {
                 if (int.TryParse(numStr, out int num))
                 {
-                    if (num % 2 != 0)
-                    {
-                        impares.Append(num).Append(" - ");
-                    }
+                    listaNumeros.Add(num); // Agregar todos los números
                 }
             }
 
-            txtArrayOrdenado.Text = impares.ToString().Trim();
-        }
+            // Ordenar los números de mayor a menor
+            listaNumeros = listaNumeros.OrderByDescending(n => n).ToList();
 
-        private void txtArrayOrdenado_TextChanged(object sender, EventArgs e)
-        {
+            // Crear la cadena para mostrar los números
+            StringBuilder resultado = new StringBuilder();
+            foreach (int num in listaNumeros)
+            {
+                resultado.Append(num).Append(" - ");
+            }
 
-        }
-
-        private void txtArray_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
+            // Mostrar el resultado en el TextBox
+            txtArrayOrdenado.Text = resultado.ToString().Trim(' ', '-');
         }
     }
 }

@@ -44,6 +44,7 @@
             btndescendente1.TabIndex = 0;
             btndescendente1.Text = "ordenar de mayor a menor \n";
             btndescendente1.UseVisualStyleBackColor = true;
+            btndescendente1.Click += btndescendente1_Click;
             // 
             // btnascendente
             // 

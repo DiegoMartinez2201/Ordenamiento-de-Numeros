@@ -30,5 +30,12 @@ namespace Ordenamiento_por_seleecion
 
             form2.Show();
         }
+
+        private void btndescendente1_Click(object sender, EventArgs e)
+        {
+            Ordenamiento_de_Mayor_a_Menor form3 = new Ordenamiento_de_Mayor_a_Menor();
+
+            form3.Show();
+        }
     }
 }
