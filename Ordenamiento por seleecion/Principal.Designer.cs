@@ -64,6 +64,7 @@
             btnpares.TabIndex = 0;
             btnpares.Text = "ordenar solo numero pares\n";
             btnpares.UseVisualStyleBackColor = true;
+            btnpares.Click += btnpares_Click;
             // 
             // btnimpares
             // 

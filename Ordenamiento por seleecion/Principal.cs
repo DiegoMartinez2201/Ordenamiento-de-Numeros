@@ -37,5 +37,12 @@ namespace Ordenamiento_por_seleecion
 
             form3.Show();
         }
+
+        private void btnpares_Click(object sender, EventArgs e)
+        {
+            Ordenamiento_Pares form4 = new Ordenamiento_Pares();
+
+            form4.Show();
+        }
     }
 }
