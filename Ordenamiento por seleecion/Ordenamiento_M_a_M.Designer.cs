@@ -69,6 +69,7 @@
             Controls.Add(button1);
             Name = "Ordenamiento_M_a_M";
             Text = "Ordenamiento_M_a_M";
+            Load += Ordenamiento_M_a_M_Load;
             ResumeLayout(false);
             PerformLayout();
         }

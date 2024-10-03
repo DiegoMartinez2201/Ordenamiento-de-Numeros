@@ -61,6 +61,11 @@ namespace Ordenamiento_por_seleecion
                 arr[i] = temp;
             }
         }
+
+        private void Ordenamiento_M_a_M_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-    
+
 }
