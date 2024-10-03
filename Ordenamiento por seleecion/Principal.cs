@@ -19,7 +19,7 @@ namespace Ordenamiento_por_seleecion
 
         private void btnascendente_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Ordenamiento_M_a_M form1 = new Ordenamiento_M_a_M();
 
             form1.Show();
         }
