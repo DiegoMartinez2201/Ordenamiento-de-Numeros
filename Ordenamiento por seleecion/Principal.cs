@@ -51,5 +51,12 @@ namespace Ordenamiento_por_seleecion
 
             form5.Show();
         }
+
+        private void btnsuma_Click(object sender, EventArgs e)
+        {
+            SumaDeLosNumeros form6 = new SumaDeLosNumeros();
+
+            form6.Show();
+        }
     }
 }
